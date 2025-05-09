@@ -17,20 +17,6 @@ The project uses the following Rust crates:
 * [`serde`](https://crates.io/crates/serde) v1.0.219 with derive
 * [`csv`](https://crates.io/crates/csv) v1.3.1
 
-### `Cargo.toml`
-
-```toml
-[package]
-name = "todo_rust"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-csv = "1.3.1"
-rocket = { version = "0.5.1", features = ["json"] }
-serde = { version = "1.0.219", features = ["derive"] }
-```
-
 ## 📂 Project Structure
 
 ```
@@ -67,7 +53,3 @@ cargo watch -x run
 | DELETE | `/tasks/<id>` | Delete a task           |
 
 > 🗂️ All data is stored in `tasks.csv`.
-
-## 📄 License
-
-This project is licensed under the MIT License.
